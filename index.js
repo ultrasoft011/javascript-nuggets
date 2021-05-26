@@ -19,3 +19,7 @@ const frameworks = [
         last_update: 17.2
     }
 ]
+// Map function to iterate over the array of objects, map: declare a function passing an argument.
+const frontEndFrameworks = frameworks.map((elements) => {
+    console.log(elements);
+});
