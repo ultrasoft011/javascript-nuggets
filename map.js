@@ -52,3 +52,11 @@ const newFrameworks = frameworks.map((item) => {
 })
 
 console.log(newFrameworks);
+
+// Render the frameworks on HTML
+const renderFrameworks = frameworks.map((element) => {
+    return `<h2>${element.name}</h2>`
+})
+
+const result = document.getElementById('render');
+result.innerHTML = renderFrameworks.join('');
