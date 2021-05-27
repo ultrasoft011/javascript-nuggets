@@ -30,8 +30,15 @@ const getCreator = (element) => {
     return element.creator;
 }
 
-// Calling the getCreator function and using map
+// Calling the getCreator function and use map
 const frontEndCreators = frameworks.map(getCreator);
+
 console.log(frontEndCreators);
 
+// Function to get the last update of each object.
+const getLastUpdate = (element) => element.last_update 
 
+// Calling the getLastUpdate function and use map to iterate
+const frontEndUpdates = frameworks.map(getLastUpdate); 
+
+console.log(frontEndUpdates);
