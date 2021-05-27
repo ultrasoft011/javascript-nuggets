@@ -25,5 +25,13 @@ const frontEndFrameworks = frameworks.map((elements) => {
 });
 console.log(frontEndFrameworks);
 
+// Function to perfom something with the array.
+const getCreator = (element) => {
+    return element.creator;
+}
+
+// Calling the getCreator function and using map
+const frontEndCreators = frameworks.map(getCreator);
+console.log(frontEndCreators);
 
 
