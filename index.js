@@ -42,3 +42,13 @@ const getLastUpdate = (element) => element.last_update
 const frontEndUpdates = frameworks.map(getLastUpdate); 
 
 console.log(frontEndUpdates);
+
+// Create a new array with Map
+const newFrameworks = frameworks.map((item) => {
+    return {
+        firstName: item.name.toLocaleLowerCase(),
+        oldLastUpdate: item.last_update
+    }
+})
+
+console.log(newFrameworks);
