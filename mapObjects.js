@@ -34,10 +34,18 @@ const getFirstGrandChild = (data) => {
 }
 
 const getFirstGreatGrandChild = (data) => {
-    const firstGreatGrandChild = data.children[0].children[0].id;
+    const firstGreatGrandChild = data.children[0].children[0].children[0].id;
     return firstGreatGrandChild;
 }
+
+const getSecondGrandChild = (data) => {
+    const firstGreatGrandChild = data.children[0].children[1].id;;
+    return firstGreatGrandChild;
+}
+
 
 console.log(getChilds(data));
 console.log(getFirstGrandChild(data));
 console.log(getFirstGreatGrandChild(data));
+console.log(getSecondGrandChild(data));
+
