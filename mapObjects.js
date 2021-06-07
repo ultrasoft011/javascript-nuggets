@@ -33,9 +33,9 @@ const getFirstGrandChild = (data) => {
     return firstGrandChild;
 }
 
-const getFirstGrandChild = (data) => {
-    const firstGrandChild = data.children[0].id;
-    return firstGrandChild;
+const getFirstGreatGrandChild = (data) => {
+    const firstGreatGrandChild = data.children[0].children[0].id;
+    return firstGreatGrandChild;
 }
 
 console.log(getChilds(data));
