@@ -23,3 +23,21 @@ const data = {
    second child
 */
 
+const getChilds = (data) => {
+    const firstChild = data.id;
+    return firstChild;
+}
+
+const getFirstGrandChild = (data) => {
+    const firstGrandChild = data.children[0].id;
+    return firstGrandChild;
+}
+
+const getFirstGrandChild = (data) => {
+    const firstGrandChild = data.children[0].id;
+    return firstGrandChild;
+}
+
+console.log(getChilds(data));
+console.log(getFirstGrandChild(data));
+console.log(getFirstGreatGrandChild(data));
