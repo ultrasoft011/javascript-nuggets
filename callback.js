@@ -46,13 +46,14 @@ const third = document.querySelector('.third');
 
 const btn = document.querySelector('.btn');
 btn.addEventListener('click', () => {
+    // This is the callback hell: is a phenomenon that afflicts a JavaScript executing multiple asynchronous operations one after the other. Not recommended.
     setTimeout(() => {
         first.style.color = 'yellow';
+        setTimeout(() => {
+            second.style.color = 'blue';
+            setTimeout(() => {
+                third.style.color = 'red';
+            }, 4000);
+        }, 3000)
     }, 2000);
-    setTimeout(() => {
-        second.style.color = 'blue';
-    }, 3000)
-    setTimeout(() => {
-        third.style.color = 'red';
-    }, 4000);
 });
