@@ -10,7 +10,7 @@ function makeUpperCase(element) {
 
 function handleName(name, cb) {
   const fullName = `${name} Ballesteros`;
-  // The callback function is invoke inside the handle function
+  // The callback function is invoke inside the handle functionz
   cb(fullName);
 }
 
